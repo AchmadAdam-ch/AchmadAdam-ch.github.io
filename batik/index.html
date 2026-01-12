@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pameran Batik Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    section { opacity: 0; transform: translateY(50px); transition: opacity 1s ease, transform 1s ease; }
+    section.show { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-sky-900 to-emerald-900 text-white">
+
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-teal-500 shadow-lg transition-all duration-500">
+    <ul class="flex justify-center gap-8 py-4">
+      <li>
+        <a href="index.html#home" class="nav-link relative text-white font-semibold px-2
+           after:content-[''] after:absolute after:left-0 after:-bottom-1 
+           after:w-0 after:h-[2px] after:bg-teal-400 after:transition-all after:duration-300
+           hover:after:w-full hover:text-teal-400">Home</a>
+      </li>
+      <li>
+        <a href="index.html#tentang" class="nav-link relative text-white font-semibold px-2
+           after:content-[''] after:absolute after:left-0 after:-bottom-1 
+           after:w-0 after:h-[2px] after:bg-teal-400 after:transition-all after:duration-300
+           hover:after:w-full hover:text-teal-400">Tentang</a>
+      </li>
+      <li>
+        <a href="index.html#sejarah" class="nav-link relative text-white font-semibold px-2
+           after:content-[''] after:absolute after:left-0 after:-bottom-1 
+           after:w-0 after:h-[2px] after:bg-teal-400 after:transition-all after:duration-300
+           hover:after:w-full hover:text-teal-400">Sejarah</a>
+      </li>
+      <li>
+        <a href="index.html#galeri" class="nav-link relative text-white font-semibold px-2
+           after:content-[''] after:absolute after:left-0 after:-bottom-1 
+           after:w-0 after:h-[2px] after:bg-teal-400 after:transition-all after:duration-300
+           hover:after:w-full hover:text-teal-400">Galeri</a>
+      </li>
+         <li>
+        <a href="index.html#kontak" class="nav-link relative text-white font-semibold px-2
+           after:content-[''] after:absolute after:left-0 after:-bottom-1 
+           after:w-0 after:h-[2px] after:bg-teal-400 after:transition-all after:duration-300
+           hover:after:w-full hover:text-teal-400">Kontak</a>
+      </li>
+    </ul>
+  </nav>
+
+ <!-- Banner Home -->
+<section id="home" class="h-screen relative flex flex-col justify-center items-center">
+  <!-- Background image + gradient -->
+  <div class="absolute inset-0">
+    <img src="lurik.jpeg" 
+         alt="Background Batik"
+         class="w-full h-full object-cover"
+         loading="eager">
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+  </div>
+
+  <!-- Teks di tengah -->
+   <h1 class="text-4xl font-bold mt-6 text-teal-400 relative z-10">Pameran Batik Indonesia</h1>
+    <p class="text-lg text-gray-300 mt-2 relative z-10">Koleksi motif batik dari seluruh Nusantara</p>
+  </section>
+
+
+
+
+  <!-- Tentang Batik Indonesia -->
+  <section id="tentang" class="min-h-screen flex items-center justify-center px-6 bg-gradient-to-r from-sky-900 to-emerald-900">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full">
+      
+      <!-- Kiri: Teks -->
+      <div class="flex flex-col justify-center">
+        <h2 class="text-3xl font-bold text-teal-400 mb-4">Tentang Batik Indonesia</h2>
+        
+        <p class="text-gray-200 mb-4">
+          Batik adalah sebuah teknik pewarnaan kain tradisional yang menggunakan prinsip 
+          <em>wax-resist dyeing</em>, yaitu metode menghalangi penyerapan warna pada bagian tertentu 
+          dari kain dengan menggunakan lilin atau malam panas.
+        </p>
+
+        <p class="text-gray-200 mb-4">
+          Teknik ini memungkinkan terciptanya lapisan-lapisan warna yang kompleks, karena satu kain dapat 
+          melalui proses pencelupan dan pelapisan lilin berulang kali.
+        </p>
+
+        <p class="text-gray-200 mb-4">
+          Secara etimologis, kata batik berasal dari bahasa Jawa, dari gabungan kata <em>amba</em> yang 
+          berarti “menulis” dan <em>titik</em> yang merujuk pada “titik atau pola kecil”.
+        </p>
+
+        <p class="text-gray-200">
+          Dengan demikian, batik bukan sekadar kain bergambar indah, melainkan juga hasil karya seni 
+          yang penuh filosofi hidup masyarakat.
+        </p>
+      </div>
+
+      <!-- Kanan: Gambar -->
+      <div class="flex items-center justify-center">
+        <div class="w-full h-96 bg-sky-950 rounded-lg shadow-lg flex items-center justify-center">
+          <img src="mega mendungd.jpeg" alt=""
+          class="w-full h-full object-cover object-center">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Sejarah Batik -->
+<section id="sejarah" class="min-h-screen px-6 py-16 bg-gradient-to-r from-emerald-900 to-sky-900 flex items-center justify-center">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl w-full">
+    
+    <!-- Kiri: Grid Gambar -->
+<div class="grid grid-cols-1 gap-3">
+  <div class="w-full h-48 bg-sky-950 rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+    <img src="lurik.jpeg" class="object-cover w-full h-full">
+  </div>
+  <div class="w-full h-48 bg-sky-950 rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+    <img src="parang rusak.jpg" class="object-cover w-full h-full">
+  </div>
+  <div class="w-full h-48 bg-sky-950 rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+    <img src="mega mendungd.jpeg" class="object-cover w-full h-full">
+  </div>
+  <div class="w-full h-48 bg-sky-950 rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+    <img src="sidomukti.webp" class="object-cover w-full h-full">
+  </div>
+</div>
+
+    
+    <!-- Kanan: Teks Sejarah -->
+    <div class="text-gray-200 space-y-6">
+      <h2 class="text-3xl font-bold text-teal-400 mb-6 text-center md:text-left">Sejarah Batik Indonesia</h2>
+      
+      <h3 class="text-2xl font-semibold text-teal-300">Sejarah Lengkap Batik</h3>
+      
+      <div>
+        <h4 class="text-xl font-semibold text-teal-200">1. Asal-usul Batik</h4>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Kata <b>“batik”</b> berasal dari bahasa Jawa: “amba” (menulis) + “titik” (titik kecil).</li>
+          <li>Teknik serupa ada di Mesir, India, China, Afrika, tetapi batik Indonesia unik dengan filosofi.</li>
+          <li>Bukti tertua terlihat pada <b>prasasti & relief candi</b> zaman Majapahit.</li>
+        </ul>
+      </div>
+
+            <div>
+        <h4 class="text-xl font-semibold text-teal-200">2. Batik di Masa Kerajaan</h4>
+        <ul class="list-disc list-inside space-y-2">
+          <li><b>Majapahit (1293–1500 M):</b> batik untuk bangsawan & upacara, pewarna alami.</li>
+          <li><b>Mataram Islam (abad 16–17):</b> berkembang di Surakarta & Yogyakarta. Motif simbolik, beberapa sakral (<i>Parang Rusak</i>).</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-semibold text-teal-200">3. Identitas Sosial</h4>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Motif batik menunjukkan status sosial (rakyat, bangsawan, keraton).</li>
+          <li>Membatik banyak dilakukan putri keraton → simbol budaya ningrat.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-semibold text-teal-200">4. Masa Kolonial</h4>
+        <ul class="list-disc list-inside space-y-2">
+          <li><b>Belanda:</b> lahir <i>Batik Belanda</i> motif Eropa.</li>
+          <li><b>Tionghoa:</b> pengaruh naga, hong, warna cerah.</li>
+          <li>Abad ke-19: muncul <b>batik cap</b> (produksi massal).</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-semibold text-teal-200">5. Abad 20</h4>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Batik populer di luar keraton.</li>
+          <li>1940-an: jadi pakaian nasional.</li>
+          <li>Era Soekarno: batik simbol identitas bangsa.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-semibold text-teal-200">6. Era Modern</h4>
+        <ul class="list-disc list-inside space-y-2">
+          <li>1970-an: batik printing.</li>
+          <li>2009: UNESCO tetapkan <b>Batik Indonesia</b> warisan dunia (2 Okt = Hari Batik Nasional).</li>
+          <li>Batik berkembang di seluruh Nusantara (Pekalongan, Cirebon, Lasem, Papua, dll).</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-semibold text-teal-200">7. Filosofi</h4>
+        <ul class="list-disc list-inside space-y-2">
+          <li><b>Parang Rusak:</b> kekuatan, pantang menyerah.</li>
+          <li><b>Kawung:</b> keadilan, keseimbangan.</li>
+          <li><b>Mega Mendung:</b> kesabaran, teduh.</li>
+          <li><b>Sidomukti:</b> harapan mulia, sejahtera (pengantin).</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-semibold text-teal-200">8. Batik di Dunia</h4>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Batik dipakai di fashion internasional.</li>
+          <li>Sempat diklaim negara lain, tapi akar sejarah di Jawa-Indonesia.</li>
+          <li>Dipakai desainer dunia (Diane von Fürstenberg, Oscar Lawalata, dll).</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Galeri -->
+  <section id="galeri" class="min-h-screen px-6 py-16 bg-gradient-to-r from-sky-900 to-emerald-900">
+    <h2 class="text-3xl font-bold text-teal-400 text-center mb-10">Galeri Batik</h2>
+    <div class="grid grid-cols-2 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <a href="produk.html" class="block bg-sky-950 rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
+        <img src="lurik.jpeg" alt="Batik Solo" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-teal-300">Batik Lurik</h3>
+          <p class="text-sm text-gray-300">Motif garis sederhana nan jujur.</p>
+        </div>
+      </a>
+      <a href="produk MegaMendung.html" class="block bg-sky-950 rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
+        <img src="mega mendungd.jpeg" alt="Batik Solo" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-teal-300">Batik Mega Mendung</h3>
+          <p class="text-sm text-gray-300">Motif Awan Besar pembawa keteduhan.</p>
+        </div>
+      </a>
+      <a href="produk parang.html" class="block bg-sky-950 rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
+        <img src="parang rusak.jpg" alt="Batik Pekalongan" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-teal-300">Batik Parang Rusak</h3>
+          <p class="text-sm text-gray-300">Motif Ombak yang semangat, pantang menyerah</p>
+        </div>
+      </a>
+      <a href="produk sidomukti.html" class="block bg-sky-950 rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
+        <img src="sidomukti.webp" alt="Batik Yogyakarta" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-teal-300">Batik Sidomukti</h3>
+          <p class="text-sm text-gray-300">Motif Ornamen Alam yang membawa kebahagiaan.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+ <!-- Section Kontak -->
+<section id="kontak" class="relative w-full py-20 px-6">
+  <div class="absolute inset-0 bg-gradient-to-r from-sky-900 to-emerald-900 -z-10"></div>
+
+  <div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold text-white">Kontak Kami</h2>
+    <p class="text-gray-200 mt-2">Hubungi kami untuk informasi lebih lanjut</p>
+    <div class="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+  </div>
+
+
+      <div class="grid md:grid-cols-2 gap-8 sm:gap-12 items-center bg-white p-8 sm:p-12 rounded-3xl shadow-xl">
+        <!-- Maps -->
+        <div>
+          <iframe 
+            class="w-full h-80 rounded-2xl shadow-lg" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7903.342039515509!2d112.63321307634834!3d-7.92938699209441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629f1b8a28299%3A0xa995c6171f4fe894!2sSMK%20Negeri%205%20Kota%20Malang!5e0!3m2!1sen!2sus!4v1758937060794!5m2!1sen!2sus" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+
+<!-- Contact Section -->
+<section id="kontak" class="w-full bg-gradient-to-r from-sky-900 to-emerald-900 py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold text-white">Kontak Kami</h2>
+    <p class="text-gray-200 mt-2">Hubungi kami untuk informasi lebih lanjut</p>
+    <div class="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Info Kontak -->
+    <div class="space-y-6">
+      <!-- Telepon -->
+      <div class="flex items-start gap-4">
+        <div class="bg-amber-100 p-3 rounded-full">
+          <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-1">Telepon</h3>
+          <p class="text-gray-200">0341-478195</p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="flex items-start gap-4">
+        <div class="bg-amber-100 p-3 rounded-full">
+          <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-1">Email</h3>
+          <p class="text-gray-200">info@smkn5malang.sch.id</p>
+        </div>
+      </div>
+
+      <!-- Alamat -->
+      <div class="flex items-start gap-4">
+        <div class="bg-amber-100 p-3 rounded-full">
+          <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-1">Alamat</h3>
+          <a 
+            href="https://www.google.com/maps/place/SMKN+5+Malang/@-7.942493,112.634537,17z" 
+            target="_blank" 
+            class="text-gray-200 hover:text-amber-400 transition-colors"
+          >
+            Jl. Terusan Ikan Piranha Atas No.50, Tunjungsekar, <br>
+            Kec. Lowokwaru, Kota Malang, Jawa Timur 65142
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Maps -->
+    <div class="rounded-lg overflow-hidden shadow-lg border-2 border-amber-500">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.2942016604937!2d112.63234807474518!3d-7.942492992082807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7882874d25e3f9%3A0x7c6a9e25d85a2c8b!2sSMKN%205%20Malang!5e0!3m2!1sid!2sid!4v1695027966454!5m2!1sid!2sid" 
+        width="100%" height="350" style="border:0;" 
+        allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <script>
+    // Navbar aktif saat scroll
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (scrollY >= sectionTop) current = section.getAttribute("id");
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("text-teal-400","font-bold");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("text-teal-400","font-bold");
+        }
+      });
+    });
+
+    // Animasi scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+  
+</body>
+</html>
