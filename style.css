@@ -1,0 +1,255 @@
+html {
+  scroll-behavior: smooth;
+}
+/* --- ROOT VARIABLES --- */
+:root {
+    --bg-dark: #0f172a;
+    --bg-card: rgba(30, 41, 59, 0.7);
+    --primary-accent: #6366f1; /* Indigo */
+    --secondary-accent: #a855f7; /* Purple */
+    --text-light: #e2e8f0;
+    --text-muted: #94a3b8;
+}
+
+body {
+    background-color: var(--bg-dark);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-light);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* --- ANIMATED BACKGROUND BLOBS --- */
+.background-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    filter: blur(80px);
+    opacity: 0.4;
+    animation: float 10s infinite ease-in-out;
+    border-radius: 50%;
+}
+
+.blob-1 {
+    width: 400px;
+    height: 400px;
+    background: var(--primary-accent);
+    top: -100px;
+    left: -100px;
+}
+
+.blob-2 {
+    width: 300px;
+    height: 300px;
+    background: var(--secondary-accent);
+    bottom: -50px;
+    right: -50px;
+    animation-delay: 2s;
+}
+
+.blob-3 {
+    width: 200px;
+    height: 200px;
+    background: #ec4899; /* Pink */
+    top: 40%;
+    left: 40%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(30px, 50px); }
+}
+
+/* --- UTILITIES --- */
+.text-gradient {
+    background: linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));
+    /* Tambahkan baris di bawah ini agar peringatan hilang */
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      color: var(--primary-accent); 
+}
+
+.ls-2 { letter-spacing: 2px; }
+.z-index-2 { position: relative; z-index: 2; }
+.section-padding { padding: 80px 0; }
+
+/* --- NAVBAR --- */
+.custom-nav {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+}
+
+.btn-contact {
+    background: linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));
+    border-radius: 20px;
+    padding: 5px 20px !important;
+    margin-left: 15px;
+    color: white !important;
+    transition: transform 0.3s;
+}
+
+.btn-contact:hover { transform: scale(1.05); }
+
+/* --- HERO SECTION --- */
+.hero-section { min-height: 100vh; padding-top: 60px; }
+
+.profile-glow {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--bg-dark);
+}
+
+.btn-primary-glow {
+    background: linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));
+    border: none;
+    color: white;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+    transition: all 0.3s;
+}
+
+.btn-primary-glow:hover {
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
+    transform: translateY(-3px);
+}
+
+/* --- CARDS & GLASSMORPHISM --- */
+.glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.floating-img {
+    animation: float 6s infinite ease-in-out;
+}
+
+/* --- SKILL CARDS --- */
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+}
+
+.skill-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-10px);
+    border-color: var(--primary-accent);
+}
+
+/* --- PROJECT CARDS --- */
+.project-card {
+    background: var(--bg-card);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary-accent);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.project-card:hover img { transform: scale(1.1); }
+
+/* --- FORM --- */
+.custom-input {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.custom-input:focus {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: var(--primary-accent);
+    color: white;
+    box-shadow: none;
+}
+/* --- PROJECT OVERLAY LINK --- */
+.card-img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Style untuk lapisan gelap di atas gambar */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.7); /* Gelap transparan */
+    backdrop-filter: blur(3px); /* Efek blur kaca */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Tersembunyi secara default */
+    transform: translateY(20px); /* Geser sedikit ke bawah */
+    transition: all 0.4s ease;
+    z-index: 10;
+}
+
+/* Saat card di-hover, overlay muncul */
+.project-card:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Agar gambar tetap zoom saat hover */
+.project-card:hover .card-img-wrapper img {
+    transform: scale(1.1);
+}
+
+/* Modifikasi tombol di dalam overlay */
+.overlay .btn {
+    padding: 8px 20px;
+    transition: transform 0.2s;
+}
+
+.overlay .btn:hover {
+    transform: scale(1.1);
+}
