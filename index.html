@@ -1,330 +1,390 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Achmad Adam | Game Developer</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Achmad Adam — Web Developer | Siswa RPL SMKN 5 Malang</title>
+  <meta name="description" content="Portofolio Achmad Adam Sajjad Arifin, siswa RPL SMKN 5 Malang. Web development, proyek website, dan pengalaman magang di divisi media." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="canonical" href="https://achmadadam-ch.github.io/" />
+
+  <!-- Pratinjau saat link dibagikan (WhatsApp, LinkedIn, dll.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Achmad Adam — Web Developer" />
+  <meta property="og:description" content="Siswa RPL SMKN 5 Malang. Lihat proyek website, sertifikat, dan laporan magang saya." />
+  <meta property="og:url" content="https://achmadadam-ch.github.io/" />
+  <meta property="og:image" content="https://achmadadam-ch.github.io/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='30' font-weight='700' text-anchor='middle' fill='white'%3EAD%3C/text%3E%3C/svg%3E" />
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body id="home">
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
 
-    <div class="background-wrapper">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
+  <!-- ============ NAVIGASI ============ -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navigasi utama">
+      <a class="brand text-gradient" href="#home">ADAM<span class="brand__dot">.</span>DEV</a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-gradient" href="#">ADAM<span class="dot">.</span>DEV</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link btn-contact" href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
+      <button class="nav__toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-menu">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="nav__menu" id="nav-menu">
+        <a class="nav__link" href="#about">Tentang</a>
+        <a class="nav__link" href="#skills">Skill</a>
+        <a class="nav__link" href="#projects">Proyek</a>
+        <a class="nav__link" href="#internship">Magang</a>
+        <a class="nav__link" href="#certificates">Sertifikat</a>
+        <a class="nav__link nav__link--cta" href="#contact">Kontak</a>
+      </div>
     </nav>
+  </header>
 
-    <section class="hero-section d-flex align-items-center">
-        <div class="container z-index-2">
-            <div class="row align-items-center flex-column-reverse flex-lg-row">
-                
-                <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
-                    <div class="profile-glow mx-auto me-lg-auto" data-aos="zoom-in" data-aos-duration="1000">
-                        <img src="img/Projects/ChatGPT_Image_Jan_30__2026__05_25_36_PM-removebg-preview.png" alt="Achmad Adam" class="profile-img" />
-                    </div>
-                </div>
+  <main id="main">
 
-                <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="hero-title display-3 fw-bold mb-3" data-aos="fade-up">
-                        Hi, I'm <br> <span class="text-gradient">Achmad Adam</span>
-                    </h1>
-                    <h2 class="h3 text-light mb-4" data-aos="fade-up" data-aos-delay="100">
-                        I am a <span class="typing-text text-primary"></span>
-                    </h2>
-                    
-                    <p class="text-secondary lead mb-4" data-aos="fade-up" data-aos-delay="150" style="max-width: 90%; margin: 0 auto 0 0;">
-                        Siswa RPL di SMKN 5 Malang. Mengubah logika menjadi pengalaman interaktif.
-                    </p>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hero__badge"><i class="bi bi-mortarboard-fill"></i> Siswa RPL · SMKN 5 Malang</p>
 
-                    <div class="d-flex justify-content-center justify-content-lg-start gap-3" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#projects" class="btn btn-primary-glow btn-lg px-5 rounded-pill">Explore Work</a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg px-4 rounded-pill">Contact Me</a>
-                    </div>
-                </div>
+          <h1 class="hero__title" id="hero-title">
+            Hi, saya <br /><span class="text-gradient">Achmad Adam</span>
+          </h1>
 
-            </div>
+          <p class="hero__role">
+            Saya seorang <span class="typed" id="typed">Web Developer</span><span class="cursor" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero__lead">
+            Membangun website yang rapi, cepat, dan enak dipakai — dari galeri budaya, situs edukasi,
+            sampai aplikasi pembaca berita.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">Lihat Proyek <i class="bi bi-arrow-down"></i></a>
+            <a href="magang.html" class="btn">Laporan Magang</a>
+            <!-- AKTIFKAN jika sudah punya CV (taruh file di folder cv/):
+            <a href="cv/CV-Achmad-Adam.pdf" class="btn" download><i class="bi bi-download"></i> Unduh CV</a> -->
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat"><span class="stat__num">4</span><span class="stat__label">Proyek</span></div>
+            <div class="stat"><span class="stat__num">2</span><span class="stat__label">Website Live</span></div>
+            <div class="stat"><span class="stat__num">2</span><span class="stat__label">Sertifikat Kaggle</span></div>
+          </div>
         </div>
+
+        <div class="hero__photo">
+          <img src="img/profile.webp" alt="Foto Achmad Adam" width="612" height="408" fetchpriority="high" />
+          <span class="hero__tag hero__tag--a">&lt;/&gt; WEB</span>
+          <span class="hero__tag hero__tag--b">{ } FRONT-END</span>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="glass-card p-5" data-aos="fade-up">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <h6 class="text-uppercase text-gradient fw-bold ls-2">Who Am I?</h6>
-                        <h2 class="mb-4 text-white fw-bold">Turning Logic into <br>Interactive Experiences</h2>
-                        <p class="text-secondary lh-lg">
-                            Saya siswa RPL di SMKN 5 Malang yang memiliki passion besar dalam <strong>Game Development</strong>. 
-                            Bagi saya, coding bukan sekadar baris perintah, tapi seni menciptakan dunia baru.
-                        </p>
-                        <p class="text-secondary lh-lg">
-                            Misi saya: Membuat game yang tidak hanya dimainkan, tapi juga membekas di hati pemainnya.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 text-center">
-                        <img src="img/Projects/ChatGPT_Image_Jan_12__2026__06_56_40_AM-removebg-preview.png" alt="Game Dev Illustration" class="img-fluid floating-img" width="400">
-                    </div>
-                </div>
-            </div>
+    <!-- ============ TENTANG ============ -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about__text reveal">
+          <span class="eyebrow">01 // Tentang</span>
+          <h2 class="section__title">Membangun website yang <span class="text-gradient">rapi dan enak dipakai</span></h2>
+          <p style="margin-top: 20px;">
+            Saya siswa RPL di SMKN 5 Malang dengan fokus di <strong>Web Development</strong>.
+            Saya senang mengerjakan bagian yang langsung dilihat dan disentuh orang: struktur halaman yang masuk akal,
+            tampilan yang rapi di HP maupun desktop, dan kode yang masih enak dibaca seminggu kemudian.
+          </p>
+          <p>
+            Sejauh ini saya sudah membangun galeri budaya, website edukasi, dan aplikasi pembaca berita.
+            Saya juga pernah membuat game 2D — pengalaman itu yang melatih cara saya berpikir soal logika dan alur pengguna.
+          </p>
+          <p>
+            Di luar kode, saya magang di divisi media dan terbiasa mengerjakan poster, thumbnail, dan video.
+            Kebiasaan itu terbawa ke web: saya peduli pada tampilan, bukan cuma fungsinya.
+          </p>
+          <p class="about__quote">Target saya: jadi web developer yang bisa dipercaya mengerjakan satu website dari nol sampai online.</p>
         </div>
+
+        <aside class="facts glass reveal" aria-label="Profil singkat">
+          <p class="facts__title">Profil singkat</p>
+          <dl>
+            <div><dt>Nama lengkap</dt><dd>Achmad Adam Sajjad Arifin</dd></div>
+            <div><dt>Sekolah</dt><dd>SMKN 5 Malang</dd></div>
+            <div><dt>Jurusan</dt><dd>Rekayasa Perangkat Lunak (RPL)</dd></div>
+            <div><dt>Fokus</dt><dd>Web Development (Front-End)</dd></div>
+            <div><dt>Domisili</dt><dd>Malang, Jawa Timur</dd></div>
+          </dl>
+        </aside>
+      </div>
     </section>
 
-    <section id="skills" class="section-padding">
-        <div class="container">
-            <div class="text-center mb-5" data-aos="fade-down">
-                <h2 class="text-white fw-bold">Tech Stack</h2>
-                <p class="text-secondary">Tools & Bahasa yang saya gunakan</p>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="0">
-                    <div class="skill-card">
-                        <i class="bi bi-filetype-py fs-1 text-warning"></i>
-                        <h5 class="mt-3 text-white">Python</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="100">
-                    <div class="skill-card">
-                        <i class="bi bi-controller fs-1 text-info"></i>
-                        <h5 class="mt-3 text-white">Game Logic</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="200">
-                    <div class="skill-card">
-                        <i class="bi bi-code-slash fs-1 text-danger"></i>
-                        <h5 class="mt-3 text-white">HTML/CSS</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="300">
-                    <div class="skill-card">
-                        <i class="bi bi-people-fill fs-1 text-success"></i>
-                        <h5 class="mt-3 text-white">Leadership</h5>
-                    </div>
-                </div>
-            </div>
+    <!-- ============ SKILL ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">02 // Skill</span>
+          <h2 class="section__title">Tech Stack</h2>
+          <p class="section__lead">Yang saya pakai sehari-hari untuk membangun website, plus kemampuan pendukung dari magang.</p>
         </div>
+
+        <div class="skills">
+          <article class="skill-group glass reveal">
+            <div class="skill-group__icon"><i class="bi bi-globe"></i></div>
+            <h3>Web (fokus utama)</h3>
+            <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Tailwind CSS</span><span class="chip">Bootstrap</span><span class="chip">Responsive Layout</span></div>
+          </article>
+
+          <article class="skill-group glass reveal">
+            <div class="skill-group__icon"><i class="bi bi-code-slash"></i></div>
+            <h3>Pemrograman &amp; Data</h3>
+            <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Logika Algoritma</span></div>
+          </article>
+
+          <article class="skill-group glass reveal">
+            <div class="skill-group__icon"><i class="bi bi-tools"></i></div>
+            <h3>Tools &amp; Workflow</h3>
+            <div class="chips"><span class="chip">Git &amp; GitHub</span><span class="chip">GitHub Pages</span><span class="chip">VS Code</span></div>
+          </article>
+
+          <article class="skill-group glass reveal">
+            <div class="skill-group__icon"><i class="bi bi-brush"></i></div>
+            <h3>Media &amp; Desain</h3>
+            <div class="chips"><span class="chip chip--cyan">Desain Poster</span><span class="chip chip--cyan">Thumbnail</span><span class="chip chip--cyan">Editing Video</span><span class="chip chip--cyan">Dokumentasi Foto</span></div>
+          </article>
+
+          <article class="skill-group glass reveal">
+            <div class="skill-group__icon"><i class="bi bi-controller"></i></div>
+            <h3>Pernah dipakai</h3>
+            <div class="chips"><span class="chip">Construct (game 2D)</span><span class="chip">Game Logic</span></div>
+          </article>
+
+          <article class="skill-group glass reveal">
+            <div class="skill-group__icon"><i class="bi bi-people-fill"></i></div>
+            <h3>Soft Skill</h3>
+            <div class="chips"><span class="chip">Kerja Tim</span><span class="chip">Komunikasi</span><span class="chip">Kerja dengan Deadline</span></div>
+          </article>
+        </div>
+      </div>
     </section>
 
-   <section id="projects" class="section-padding">
-        <div class="container">
-            <div class="text-center mb-5" data-aos="fade-down">
-                <h6 class="text-uppercase text-gradient fw-bold ls-2">Portfolio</h6>
-                <h2 class="text-white fw-bold">My Works & Achievements</h2>
-            </div>
-            
-            <div class="row g-4">
-                
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
-                    <div class="project-card h-100">
-                        <div class="card-img-wrapper">
-                            <img src="img/Projects/Achmad Adam Sajjad Arifin - Python.png" alt="Kaggle Python" onerror="this.src='https://via.placeholder.com/400x300?text=Python+Certificate'" />
-                            <div class="overlay">
-                                <a href="https://www.kaggle.com/learn/certification/achmadadamadam/python" target="_blank" class="btn btn-primary-glow rounded-pill fw-bold px-4">
-                                    <i class="bi bi-award-fill"></i> View Certificate
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-content p-4">
-                            <h4 class="text-white fw-bold">Python Certification</h4>
-                            <span class="badge bg-warning text-dark mb-2">Kaggle</span>
-                            <p class="text-secondary small">Menyelesaikan kursus fundamental Python, mencakup syntax dasar, list, loops, dan logic programming.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card h-100">
-                        <div class="card-img-wrapper">
-                            <img src="img/Projects/Achmad Adam Sajjad Arifin - Intro to SQL.png" alt="Kaggle SQL" onerror="this.src='https://via.placeholder.com/400x300?text=SQL+Certificate'" />
-                            <div class="overlay">
-                                <a href="https://www.kaggle.com/learn/certification/achmadadamadam/intro-to-sql" target="_blank" class="btn btn-primary-glow rounded-pill fw-bold px-4">
-                                    <i class="bi bi-database-fill"></i> View Certificate
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-content p-4">
-                            <h4 class="text-white fw-bold">Intro to SQL</h4>
-                            <span class="badge bg-info text-dark mb-2">Database</span>
-                            <p class="text-secondary small">Sertifikasi pemahaman query database, filtering data, dan manajemen database relasional dasar.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-card h-100">
-                        <div class="card-img-wrapper">
-                            <img src="img/Projects/Screenshot 2026-01-09 065101.png" alt="Sejarah Islam" onerror="this.src='https://via.placeholder.com/400x300?text=Sejarah+Islam+Web'" />
-                            <div class="overlay">
-                                <a href="https://achmadadam-ch.github.io/Sejarah-Islam/" target="_blank" class="btn btn-primary-glow rounded-pill fw-bold px-4">
-                                    <i class="bi bi-globe"></i> Visit Website
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-content p-4">
-                            <h4 class="text-white fw-bold">Sejarah Islam</h4>
-                            <span class="badge bg-success mb-2">Web Design</span>
-                            <p class="text-secondary small">Website edukatif yang merangkum sejarah peradaban Islam dengan tampilan interaktif.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-card h-100">
-                        <div class="card-img-wrapper">
-                            <img src="img/Projects/Screenshot 2026-01-12 063904.png" alt="Pixel Horror" onerror="this.src='https://via.placeholder.com/400x300?text=Horror+Game'" />
-                            <div class="overlay">
-                                <a href="http://103.186.167.18:8002/rpl2/game/Pixel%20Horror/" target="_blank" class="btn btn-danger rounded-pill fw-bold px-4">
-                                    <i class="bi bi-controller"></i> Play Game
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-content p-4">
-                            <h4 class="text-white fw-bold">Pixel Horror</h4>
-                            <span class="badge bg-danger mb-2">Construct Engine</span>
-                            <p class="text-secondary small">Game horror 2D berbasis Construct. Jelajahi kegelapan dan hindari rintangan yang mencekam.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-card h-100">
-                        <div class="card-img-wrapper">
-                            <img src="img/Projects/Screenshot 2026-01-30 164650.png" alt="Web Batik" onerror="this.src='https://via.placeholder.com/400x300?text=Web+Batik'" />
-                            <div class="overlay">
-                                <a href="https://achmadadam-ch.github.io/batik/" target="_blank" class="btn btn-primary-glow rounded-pill fw-bold px-4">
-                                    <i class="bi bi-palette-fill"></i> Visit Gallery
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-content p-4">
-                            <h4 class="text-white fw-bold">Warisan Batik</h4>
-                            <span class="badge bg-warning text-dark mb-2">Culture & Art</span>
-                            <p class="text-secondary small">Digitalisasi kekayaan budaya Batik Indonesia melalui website galeri yang estetik.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="project-card h-100">
-                        <div class="card-img-wrapper">
-                            <img src="img/Projects/Screenshot 2026-01-30 171226.png" alt="News Reader" onerror="this.src='https://via.placeholder.com/400x300?text=News+Reader+App'" />
-                            <div class="overlay">
-                                <a href="https://github.com/AchmadAdam-ch/news_reader" target="_blank" class="btn btn-light rounded-pill fw-bold px-4">
-                                    <i class="bi bi-github"></i> View Source
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-content p-4">
-                            <h4 class="text-white fw-bold">News Reader App</h4>
-                            <span class="badge bg-primary mb-2">Application</span>
-                            <p class="text-secondary small">Aplikasi pembaca berita yang mengambil data real-time, dibuat untuk kemudahan akses informasi.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <!-- ============ PROYEK ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">03 // Proyek</span>
+          <h2 class="section__title">Karya &amp; Proyek</h2>
+          <p class="section__lead">Website dan aplikasi yang sudah saya buat. Klik untuk melihat hasilnya langsung.</p>
         </div>
+
+        <!-- Proyek unggulan -->
+        <article class="feature glass reveal">
+          <div class="feature__media">
+            <img src="img/projects/warisan-batik.webp" alt="Website galeri Pameran Batik Indonesia" width="1200" height="538" loading="lazy" />
+          </div>
+          <div class="feature__body">
+            <span class="eyebrow">Proyek unggulan · Website</span>
+            <h3>Warisan Batik</h3>
+            <p>Website pameran batik Indonesia: satu halaman utama sebagai galeri, dan halaman detail untuk tiap motif
+               (Mega Mendung, Parang, Sidomukti, Lurik). Dibangun dengan Tailwind CSS.</p>
+            <ul class="checklist">
+              <li>Multi-halaman dengan navigasi antar motif</li>
+              <li>Layout galeri yang menyesuaikan layar HP dan desktop</li>
+              <li>Fokus pada tampilan: tipografi, spasi, dan kualitas gambar</li>
+            </ul>
+            <div class="chips"><span class="chip">HTML</span><span class="chip">Tailwind CSS</span><span class="chip">Multi-halaman</span></div>
+            <div class="actions">
+              <a href="https://achmadadam-ch.github.io/batik/" target="_blank" rel="noopener" class="btn btn--primary"><i class="bi bi-box-arrow-up-right"></i> Kunjungi Website</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyek lainnya. Untuk menambah proyek: salin satu <article class="card ..."> lalu ganti isinya. -->
+        <div class="cards">
+
+          <article class="card glass reveal">
+            <div class="card__media">
+              <img src="img/projects/sejarah-islam.webp" alt="Website Sejarah Peradaban Islam" width="1200" height="675" loading="lazy" />
+              <span class="card__badge">Website</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Sejarah Peradaban Islam</h3>
+              <p class="card__desc">Website edukatif yang merangkum sejarah peradaban Islam, dari Nabi Muhammad hingga Dinasti Abbasiyah, dengan tampilan interaktif.</p>
+              <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Timeline</span><span class="chip">Peta Interaktif</span></div>
+              <div class="actions">
+                <a href="https://achmadadam-ch.github.io/Sejarah-Islam/" target="_blank" rel="noopener" class="btn btn--primary btn--sm"><i class="bi bi-box-arrow-up-right"></i> Kunjungi Website</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card glass reveal">
+            <div class="card__media">
+              <img src="img/projects/news-reader.webp" alt="Aplikasi News Reader dengan daftar berita dan filter kategori" width="1200" height="563" loading="lazy" />
+              <span class="card__badge">Aplikasi</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">News Reader</h3>
+              <p class="card__desc">Aplikasi pembaca berita yang mengambil data secara real-time, dibuat untuk memudahkan akses informasi.</p>
+              <div class="chips"><span class="chip">Pencarian</span><span class="chip">Kategori</span><span class="chip">Bookmark</span></div>
+              <div class="actions">
+                <a href="https://github.com/AchmadAdam-ch/news_reader" target="_blank" rel="noopener" class="btn btn--sm"><i class="bi bi-github"></i> Lihat Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card glass reveal">
+            <div class="card__media">
+              <img src="img/projects/pixel-horror.webp" alt="Tampilan awal game Pixel Horror: dungeon 2D dengan petunjuk permainan" width="1400" height="734" loading="lazy" />
+              <span class="card__badge">Game 2D</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Pixel Horror</h3>
+              <p class="card__desc">Game horror 2D berbasis Construct: jelajahi dungeon gelap, kumpulkan 10 kunci, dan temukan jalan keluar. Proyek lama, tapi di sinilah saya belajar merancang alur dan aturan main.</p>
+              <div class="chips"><span class="chip">Construct</span><span class="chip">2D</span><span class="chip">Game Logic</span></div>
+              <div class="actions">
+                <!-- CATATAN: link ini memakai alamat IP server sekolah (http://). Kalau server dimatikan, link akan mati.
+                     Saran: export game dari Construct lalu upload ke itch.io. -->
+                <a href="http://103.186.167.18:8002/rpl2/game/Pixel%20Horror/" target="_blank" rel="noopener" class="btn btn--sm"><i class="bi bi-controller"></i> Mainkan Game</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="glass-card p-5" data-aos="zoom-in">
-                        <div class="text-center mb-4">
-                            <h2 class="text-white fw-bold">Get In Touch</h2>
-                        </div>
-
-                        <div class="alert alert-success d-none alert-dismissible fade show" role="alert">
-                            <strong>Success!</strong> Pesan terkirim.
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-
-                        <form name="wpu-contact-form">
-                            <div class="mb-3">
-                                <input type="text" class="form-control custom-input" name="nama" placeholder="Your Name" />
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control custom-input" name="email" placeholder="Your Email" />
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control custom-input" rows="4" name="pesan" placeholder="Message..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary-glow w-100 btn-kirim">Send Message</button>
-                            <button class="btn btn-primary-glow w-100 btn-loading d-none" type="button" disabled>Loading...</button>
-                        </form>
-                    </div>
-                </div>
+    <!-- ============ MAGANG (ringkasan) ============ -->
+    <section id="internship" class="section">
+      <div class="container">
+        <div class="intern glass reveal">
+          <div>
+            <span class="eyebrow">04 // Magang</span>
+            <h2 class="section__title">Pengalaman Magang</h2>
+            <p style="margin-top: 16px;">
+              Saya menjalani PKL di <strong>LAZIS Sabilillah Malang</strong> pada divisi Media — satu naungan dengan
+              <strong>Radio Desimal 89,5 FM</strong>. Tugas saya membuat poster, thumbnail video untuk Instagram dan YouTube,
+              dokumentasi kegiatan, serta produksi video. Hasil kerjanya tayang di kanal resmi LAZIS Sabilillah dan Radio Desimal.
+            </p>
+            <div class="actions">
+              <a href="magang.html" class="btn btn--primary">Baca Laporan Lengkap <i class="bi bi-arrow-right"></i></a>
+              <!-- AKTIFKAN kalau file PDF sudah ditaruh di folder laporan/:
+              <a href="laporan/laporan-magang.pdf" class="btn" download><i class="bi bi-file-earmark-pdf"></i> Unduh PDF</a> -->
             </div>
+          </div>
+
+          <div class="intern__facts">
+            <div class="mini"><span class="mini__label">Instansi</span><span class="mini__value">LAZIS Sabilillah Malang</span></div>
+            <div class="mini"><span class="mini__label">Divisi</span><span class="mini__value">Media &amp; Radio Desimal 89,5 FM</span></div>
+            <div class="mini"><span class="mini__label">Periode</span><span class="mini__value"><span class="todo">Bulan – Bulan Tahun</span></span></div>
+            <div class="mini"><span class="mini__label">Lokasi</span><span class="mini__value">Malang, Jawa Timur</span></div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <footer class="text-center py-4 border-top border-dark mt-5">
-        <p class="text-secondary small mb-0">&copy; 2025 Achmad Adam. Built with Code & Coffee.</p>
-    </footer>
+    <!-- ============ SERTIFIKAT ============ -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">05 // Sertifikat</span>
+          <h2 class="section__title">Sertifikasi &amp; Pencapaian</h2>
+          <p class="section__lead">Klik sertifikat untuk memverifikasinya langsung di Kaggle.</p>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    
-    <script>
-        // Init AOS (Animasi Scroll)
-        AOS.init({
-            once: true, // Animasi hanya terjadi sekali saat scroll
-            offset: 100
-        });
+        <div class="certs">
+          <article class="cert glass reveal">
+            <a class="cert__img" href="https://www.kaggle.com/learn/certification/achmadadamadam/python" target="_blank" rel="noopener" aria-label="Verifikasi sertifikat Python di Kaggle">
+              <img src="img/certs/kaggle-python.webp" alt="Sertifikat Kaggle: Python" width="1400" height="863" loading="lazy" />
+            </a>
+            <div class="cert__body">
+              <div>
+                <h3>Python</h3>
+                <p class="cert__meta" style="margin:0;">Kaggle · 27 November 2025</p>
+              </div>
+              <a class="btn btn--sm" href="https://www.kaggle.com/learn/certification/achmadadamadam/python" target="_blank" rel="noopener"><i class="bi bi-patch-check"></i> Verifikasi</a>
+            </div>
+          </article>
 
-        // Init Typing Effect
-        var typed = new Typed('.typing-text', {
-            strings: ['Game Developer.', 'RPL Student.', 'Creative Thinker.'],
-            typeSpeed: 50,
-            backSpeed: 30,
-            loop: true
-        });
+          <article class="cert glass reveal">
+            <a class="cert__img" href="https://www.kaggle.com/learn/certification/achmadadamadam/intro-to-sql" target="_blank" rel="noopener" aria-label="Verifikasi sertifikat Intro to SQL di Kaggle">
+              <img src="img/certs/kaggle-sql.webp" alt="Sertifikat Kaggle: Intro to SQL" width="1400" height="863" loading="lazy" />
+            </a>
+            <div class="cert__body">
+              <div>
+                <h3>Intro to SQL</h3>
+                <p class="cert__meta" style="margin:0;">Kaggle · 27 November 2025</p>
+              </div>
+              <a class="btn btn--sm" href="https://www.kaggle.com/learn/certification/achmadadamadam/intro-to-sql" target="_blank" rel="noopener"><i class="bi bi-patch-check"></i> Verifikasi</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-       
-        const scriptURL = "https://script.google.com/macros/s/AKfycbwVbxEzcKiblN6j5rYq8PQ3u5OTB_fs-JcyqfTsyUjw7VliBtK4maB_GuhPEuMEVWWHxg/exec";
-        const form = document.forms["wpu-contact-form"];
-        const btnKirim = document.querySelector(".btn-kirim");
-        const btnLoading = document.querySelector(".btn-loading");
-        const myAlert = document.querySelector(".alert.alert-success");
+    <!-- ============ KONTAK ============ -->
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div class="reveal">
+          <span class="eyebrow">06 // Kontak</span>
+          <h2 class="section__title">Yuk, ngobrol!</h2>
+          <p class="section__lead">Punya proyek website, kesempatan magang, atau sekadar ingin berdiskusi? Kirim pesan lewat form atau hubungi langsung lewat kanal berikut.</p>
 
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            fetch(scriptURL, { method: "POST", body: new FormData(form) })
-                .then((response) => {
-                    btnLoading.classList.toggle("d-none");
-                    btnKirim.classList.toggle("d-none");
-                    myAlert.classList.toggle("d-none");
-                    form.reset();
-                    console.log("Success!", response);
-                })
-                .catch((error) => console.error("Error!", error.message));
-        });
-    </script>
+          <div class="contact__links">
+            <a class="contact__link" href="mailto:Ohd8094@gmail.com">
+              <i class="bi bi-envelope-fill"></i><div><small>Email</small><span>Ohd8094@gmail.com</span></div>
+            </a>
+            <a class="contact__link" href="https://wa.me/628980500898" target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp"></i><div><small>WhatsApp</small><span>0898-0500-898</span></div>
+            </a>
+            <a class="contact__link" href="https://github.com/AchmadAdam-ch" target="_blank" rel="noopener">
+              <i class="bi bi-github"></i><div><small>GitHub</small><span>@AchmadAdam-ch</span></div>
+            </a>
+            <a class="contact__link" href="https://www.kaggle.com/achmadadamadam" target="_blank" rel="noopener">
+              <i class="bi bi-bar-chart-fill"></i><div><small>Kaggle</small><span>achmadadamadam</span></div>
+            </a>
+          </div>
+        </div>
+
+        <form class="form glass reveal" id="contact-form" name="wpu-contact-form" novalidate>
+          <div class="field">
+            <label for="nama">Nama</label>
+            <input class="input" type="text" id="nama" name="nama" placeholder="Nama kamu" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="pesan">Pesan</label>
+            <textarea class="input" id="pesan" name="pesan" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+          </div>
+          <!-- Kolom jebakan bot (jangan dihapus) -->
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <button type="submit" class="btn btn--primary btn--block" id="form-submit">Kirim Pesan <i class="bi bi-send"></i></button>
+          <p class="notice notice--ok" id="form-ok" role="status" hidden><strong>Terkirim!</strong> Terima kasih, pesanmu sudah masuk.</p>
+          <p class="notice notice--err" id="form-err" role="alert" hidden><strong>Gagal mengirim.</strong> Coba lagi sebentar, atau hubungi lewat email / WhatsApp di samping.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year">2026</span> Achmad Adam Sajjad Arifin. Dibuat dengan HTML, CSS &amp; JavaScript.</p>
+      <a class="footer__top" href="#home"><i class="bi bi-arrow-up"></i> Kembali ke atas</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+Taruh foto dokumentasi magang di sini: foto-1.webp, foto-2.webp, foto-3.webp, foto-4.webp ...
+
+- Rasio 4:3 paling pas (mis. 1200x900 px).
+- Format JPG/PNG juga boleh; kalau begitu ubah ekstensi di magang.html (src="img/magang/foto-1.jpg").
+- Agar ringan, konversi ke WebP dulu (mis. lewat squoosh.app). Target < 200 KB per foto.
+- Hapus foto orang lain/data rahasia perusahaan (layar dengan data internal) sebelum dipublikasikan.

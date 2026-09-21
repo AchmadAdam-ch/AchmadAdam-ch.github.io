@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laporan Magang — LAZIS Sabilillah Malang | Achmad Adam</title>
+  <meta name="description" content="Laporan dan dokumentasi PKL Achmad Adam di divisi Media LAZIS Sabilillah Malang dan Radio Desimal 89,5 FM." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="canonical" href="https://achmadadam-ch.github.io/magang.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Laporan Magang — LAZIS Sabilillah Malang" />
+  <meta property="og:description" content="PKL di divisi Media LAZIS Sabilillah Malang & Radio Desimal 89,5 FM: tugas, hasil kerja, dan refleksi." />
+  <meta property="og:url" content="https://achmadadam-ch.github.io/magang.html" />
+  <meta property="og:image" content="https://achmadadam-ch.github.io/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='30' font-weight='700' text-anchor='middle' fill='white'%3EAD%3C/text%3E%3C/svg%3E" />
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!--
+  ╔════════════════════════════════════════════════════════════════╗
+  ║  CARA MENGISI HALAMAN INI                                      ║
+  ║  1. Cari semua teks berlatar kuning putus-putus (class "todo") ║
+  ║     — itu bagian yang harus kamu ganti dengan data aslimu.     ║
+  ║  2. Setelah diganti, HAPUS tag <span class="todo"> … </span>   ║
+  ║     agar tampil normal (sisakan teksnya saja).                 ║
+  ║  3. Bagian yang tidak kamu perlukan boleh dihapus satu blok    ║
+  ║     <section> penuh — layout otomatis menyesuaikan.            ║
+  ║  4. Foto → folder img/magang/  |  PDF → folder laporan/        ║
+  ╚════════════════════════════════════════════════════════════════╝
+-->
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navigasi utama">
+      <a class="brand text-gradient" href="index.html">ADAM<span class="brand__dot">.</span>DEV</a>
+      <button class="nav__toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-menu">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="nav__menu" id="nav-menu">
+        <a class="nav__link" href="index.html#about">Tentang</a>
+        <a class="nav__link" href="index.html#skills">Skill</a>
+        <a class="nav__link" href="index.html#projects">Proyek</a>
+        <a class="nav__link is-active" href="magang.html" aria-current="page">Magang</a>
+        <a class="nav__link" href="index.html#certificates">Sertifikat</a>
+        <a class="nav__link nav__link--cta" href="index.html#contact">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO HALAMAN ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <a class="breadcrumb" href="index.html"><i class="bi bi-arrow-left"></i> Kembali ke portofolio</a><br />
+        <span class="eyebrow">Laporan Magang</span>
+        <h1>Magang di <span class="text-gradient">LAZIS Sabilillah Malang</span></h1>
+        <p>PKL di divisi Media LAZIS Sabilillah — satu naungan dengan Radio Desimal 89,5 FM. Saya mengerjakan poster,
+           thumbnail video untuk Instagram dan YouTube, dokumentasi kegiatan, dan produksi video. Hasilnya tayang
+           di kanal resmi LAZIS Sabilillah dan Radio Desimal.</p>
+        <div class="actions">
+          <a href="#tugas" class="btn btn--primary"><i class="bi bi-journal-text"></i> Lihat Yang Saya Kerjakan</a>
+          <!-- AKTIFKAN kalau PDF laporan sudah ditaruh di folder laporan/:
+          <a href="laporan/laporan-magang.pdf" class="btn" download><i class="bi bi-file-earmark-pdf"></i> Unduh PDF</a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Daftar isi (lengket di atas saat scroll) -->
+    <div class="toc">
+      <div class="container">
+        <nav class="toc__list" aria-label="Daftar isi halaman">
+          <a href="#info">Info Magang</a>
+          <a href="#tugas">Tugas &amp; Hasil</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#skill">Skill Didapat</a>
+          <a href="#dokumentasi">Dokumentasi</a>
+          <a href="#laporan">Laporan</a>
+          <a href="#refleksi">Refleksi</a>
+          <a href="#penilaian">Penilaian</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ============ INFO MAGANG ============ -->
+    <section id="info" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">01 // Info Magang</span>
+          <h2 class="section__title">Sekilas tentang magang</h2>
+        </div>
+
+        <div class="info-grid reveal">
+          <div class="mini"><span class="mini__label">Instansi</span><span class="mini__value">LAZIS Sabilillah Malang</span></div>
+          <div class="mini"><span class="mini__label">Bidang / Divisi</span><span class="mini__value">Media</span></div>
+          <div class="mini"><span class="mini__label">Cakupan kontrak PKL</span><span class="mini__value">LAZIS Sabilillah &amp; Radio Desimal 89,5 FM</span></div>
+          <div class="mini"><span class="mini__label">Periode</span><span class="mini__value"><span class="todo">DD Bulan YYYY – DD Bulan YYYY</span></span></div>
+          <div class="mini"><span class="mini__label">Durasi</span><span class="mini__value"><span class="todo">n bulan</span></span></div>
+          <div class="mini"><span class="mini__label">Lokasi</span><span class="mini__value">Malang, Jawa Timur</span></div>
+          <div class="mini"><span class="mini__label">Pembimbing Industri</span><span class="mini__value"><span class="todo">Nama, jabatan</span></span></div>
+          <div class="mini"><span class="mini__label">Pembimbing Sekolah</span><span class="mini__value"><span class="todo">Nama guru pembimbing</span></span></div>
+        </div>
+
+        <div class="two-col" style="margin-top: 24px;">
+          <div class="panel glass reveal">
+            <h3>Tujuan magang</h3>
+            <p>Terjun langsung ke lingkungan kerja nyata dan belajar memproduksi konten yang benar-benar dipakai
+               publik — bukan sekadar tugas sekolah. Di divisi media saya ingin terbiasa bekerja dengan brief,
+               revisi, dan tenggat, sekaligus mengasah sisi visual yang nantinya menunjang pekerjaan saya di web.</p>
+          </div>
+          <div class="panel glass reveal">
+            <h3>Tentang instansi</h3>
+            <p>LAZIS Sabilillah adalah lembaga amil zakat, infaq, dan shadaqah di Malang. Dalam satu naungan yang sama
+               ada <strong>Radio Desimal 89,5 FM</strong>. Saya ditempatkan di divisi Media, yang mengurus seluruh
+               kebutuhan publikasi: desain, dokumentasi, dan video untuk kanal Instagram, YouTube, dan siaran radio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TUGAS & HASIL ============ -->
+    <section id="tugas" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">02 // Tugas &amp; Hasil</span>
+          <h2 class="section__title">Apa yang saya kerjakan</h2>
+        </div>
+
+        <div class="panel glass reveal" style="margin-bottom: 24px;">
+          <h3>Tanggung jawab utama</h3>
+          <ul class="checklist" style="margin-bottom:0;">
+            <li>Membuat poster untuk kebutuhan publikasi program dan kegiatan</li>
+            <li>Membuat thumbnail video untuk Instagram dan YouTube</li>
+            <li>Dokumentasi foto kegiatan di lapangan</li>
+            <li>Produksi video: pengambilan gambar sampai editing</li>
+            <li>Mendukung kebutuhan konten Radio Desimal 89,5 FM</li>
+          </ul>
+        </div>
+
+        <!-- Hasil kerja: salin satu <article class="deliverable"> untuk menambah.
+             Kalau ada link postingan/video tertentu, aktifkan tombol "Lihat hasil" di bawahnya. -->
+        <div class="deliverables">
+          <article class="deliverable glass reveal">
+            <span class="eyebrow" style="margin:0;">Hasil 01</span>
+            <h3>Poster program &amp; kegiatan</h3>
+            <p>Desain poster untuk publikasi program LAZIS Sabilillah, dibuat mengikuti brief dari tim media dan
+               gaya visual lembaga. <span class="todo">Tambahkan: kira-kira berapa poster yang kamu buat selama PKL?</span></p>
+            <div class="chips"><span class="chip">Desain Grafis</span><span class="chip">Sosial Media</span></div>
+            <!-- Kalau ada link postingannya: <a class="btn btn--sm" href="https://…" target="_blank" rel="noopener">Lihat hasil</a> -->
+          </article>
+
+          <article class="deliverable glass reveal">
+            <span class="eyebrow" style="margin:0;">Hasil 02</span>
+            <h3>Thumbnail video Instagram &amp; YouTube</h3>
+            <p>Membuat thumbnail yang jadi wajah pertama tiap video di kanal LAZIS Sabilillah dan Radio Desimal —
+               harus terbaca jelas meski tampil kecil di feed.</p>
+            <div class="chips"><span class="chip">Thumbnail</span><span class="chip">YouTube</span><span class="chip">Instagram</span></div>
+            <!-- Link kanal: <a class="btn btn--sm" href="https://…" target="_blank" rel="noopener">Lihat kanal</a> -->
+          </article>
+
+          <article class="deliverable glass reveal">
+            <span class="eyebrow" style="margin:0;">Hasil 03</span>
+            <h3>Produksi video &amp; dokumentasi</h3>
+            <p>Mengambil dokumentasi kegiatan di lapangan dan mengolahnya menjadi video yang tayang di kanal resmi.
+               <span class="todo">Tambahkan satu contoh video yang paling kamu banggakan beserta linknya.</span></p>
+            <div class="chips"><span class="chip">Videografi</span><span class="chip">Editing</span><span class="chip">Dokumentasi</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE MINGGUAN ============ -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">03 // Timeline</span>
+          <h2 class="section__title">Jurnal mingguan</h2>
+          <p class="section__lead">Perjalanan magang dari minggu ke minggu. Salin satu blok <code>tl-item</code> untuk menambah minggu.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="tl-item glass reveal">
+            <span class="tl-item__week">Minggu 1</span>
+            <h3>Orientasi di divisi Media</h3>
+            <p class="tl-item__date"><span class="todo">DD – DD Bulan YYYY</span></p>
+            <ul>
+              <li>Pengenalan tim, alur kerja, dan kanal LAZIS Sabilillah &amp; Radio Desimal</li>
+              <li><span class="todo">Tugas pertama yang kamu kerjakan</span></li>
+            </ul>
+            <p class="tl-item__learn"><b>Yang dipelajari:</b> <span class="todo">satu kalimat inti pelajaran minggu ini.</span></p>
+          </article>
+
+          <article class="tl-item glass reveal">
+            <span class="tl-item__week">Minggu 2–3</span>
+            <h3><span class="todo">mis. Mulai pegang desain poster</span></h3>
+            <p class="tl-item__date"><span class="todo">DD – DD Bulan YYYY</span></p>
+            <ul>
+              <li><span class="todo">Kegiatan / karya yang dibuat</span></li>
+              <li><span class="todo">Kegiatan / karya yang dibuat</span></li>
+            </ul>
+            <p class="tl-item__learn"><b>Yang dipelajari:</b> <span class="todo">…</span></p>
+          </article>
+
+          <article class="tl-item glass reveal">
+            <span class="tl-item__week">Minggu 4–…</span>
+            <h3><span class="todo">mis. Dokumentasi lapangan &amp; produksi video</span></h3>
+            <p class="tl-item__date"><span class="todo">DD – DD Bulan YYYY</span></p>
+            <ul>
+              <li><span class="todo">Kegiatan / karya yang dibuat</span></li>
+              <li><span class="todo">Kegiatan / karya yang dibuat</span></li>
+            </ul>
+            <p class="tl-item__learn"><b>Yang dipelajari:</b> <span class="todo">…</span></p>
+          </article>
+
+          <article class="tl-item glass reveal">
+            <span class="tl-item__week">Minggu terakhir</span>
+            <h3>Penutupan &amp; penyusunan laporan</h3>
+            <p class="tl-item__date"><span class="todo">DD – DD Bulan YYYY</span></p>
+            <ul>
+              <li><span class="todo">Kegiatan penutup (presentasi, serah terima, dll.)</span></li>
+            </ul>
+            <p class="tl-item__learn"><b>Yang dipelajari:</b> <span class="todo">…</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILL YANG DIDAPAT ============ -->
+    <section id="skill" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">04 // Skill Didapat</span>
+          <h2 class="section__title">Kemampuan yang bertambah</h2>
+        </div>
+        <div class="two-col">
+          <div class="panel glass reveal">
+            <h3><i class="bi bi-cpu" style="color:var(--accent)"></i> Teknis</h3>
+            <div class="chips">
+              <span class="chip">Desain Poster</span>
+              <span class="chip">Thumbnail Video</span>
+              <span class="chip">Videografi</span>
+              <span class="chip">Editing Video</span>
+              <span class="chip">Dokumentasi Foto</span>
+              <span class="chip">Konten Sosial Media</span>
+            </div>
+          </div>
+          <div class="panel glass reveal">
+            <h3><i class="bi bi-people" style="color:var(--accent)"></i> Non-teknis</h3>
+            <div class="chips">
+              <span class="chip chip--cyan">Kerja dengan Brief</span>
+              <span class="chip chip--cyan">Menerima Revisi</span>
+              <span class="chip chip--cyan">Kerja Tim</span>
+              <span class="chip chip--cyan">Disiplin Tenggat</span>
+              <span class="chip chip--cyan">Komunikasi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOKUMENTASI FOTO ============ -->
+    <section id="dokumentasi" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">05 // Dokumentasi</span>
+          <h2 class="section__title">Foto kegiatan</h2>
+          <p class="section__lead">Simpan foto di <code>img/magang/</code> dengan nama <code>foto-1.webp</code>, <code>foto-2.webp</code>, dst. (JPG/PNG juga boleh — sesuaikan ekstensi di bawah).</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="shot glass reveal">
+            <div class="shot__frame"><span>Foto 1</span><img src="img/magang/foto-1.webp" alt="Deskripsi foto 1" loading="lazy" onerror="this.remove()" /></div>
+            <figcaption><span class="todo">Keterangan foto 1</span></figcaption>
+          </figure>
+          <figure class="shot glass reveal">
+            <div class="shot__frame"><span>Foto 2</span><img src="img/magang/foto-2.webp" alt="Deskripsi foto 2" loading="lazy" onerror="this.remove()" /></div>
+            <figcaption><span class="todo">Keterangan foto 2</span></figcaption>
+          </figure>
+          <figure class="shot glass reveal">
+            <div class="shot__frame"><span>Foto 3</span><img src="img/magang/foto-3.webp" alt="Deskripsi foto 3" loading="lazy" onerror="this.remove()" /></div>
+            <figcaption><span class="todo">Keterangan foto 3</span></figcaption>
+          </figure>
+          <figure class="shot glass reveal">
+            <div class="shot__frame"><span>Foto 4</span><img src="img/magang/foto-4.webp" alt="Deskripsi foto 4" loading="lazy" onerror="this.remove()" /></div>
+            <figcaption><span class="todo">Keterangan foto 4</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LAPORAN ============ -->
+    <section id="laporan" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">06 // Laporan</span>
+          <h2 class="section__title">Laporan lengkap</h2>
+          <p class="section__lead">Baca langsung di sini atau unduh PDF-nya. Ringkasan per bab ada di sebelah kanan.</p>
+          <p class="section__lead"><span class="todo">Catatan: ringkasan bab di bawah masih memakai sistematika umum (Bab I–V). Akan disesuaikan dengan format laporan dari sekolah.</span></p>
+        </div>
+
+        <div class="report">
+          <div class="pdf-frame glass reveal">
+            <object data="laporan/laporan-magang.pdf#view=FitH" type="application/pdf" aria-label="Pratinjau laporan magang (PDF)">
+              <div class="pdf-fallback">
+                <p><i class="bi bi-file-earmark-pdf" style="font-size:2.4rem;color:var(--accent)"></i></p>
+                <p>Pratinjau PDF tidak tersedia di perangkat ini (atau file belum diunggah).</p>
+                <a class="btn btn--primary" href="laporan/laporan-magang.pdf" download><i class="bi bi-download"></i> Unduh Laporan (PDF)</a>
+              </div>
+            </object>
+          </div>
+
+          <!-- Ringkasan per bab — sesuaikan dengan sistematika laporan dari sekolahmu -->
+          <div class="acc reveal">
+            <details open>
+              <summary>BAB I — Pendahuluan</summary>
+              <div class="acc__body"><p><span class="todo">Ringkasan latar belakang, tujuan, dan manfaat magang.</span></p></div>
+            </details>
+            <details>
+              <summary>BAB II — Profil Instansi</summary>
+              <div class="acc__body"><p><span class="todo">Sejarah singkat, struktur organisasi, dan bidang usaha.</span></p></div>
+            </details>
+            <details>
+              <summary>BAB III — Pelaksanaan Kegiatan</summary>
+              <div class="acc__body"><p><span class="todo">Rangkuman kegiatan, metode kerja, dan tools yang dipakai.</span></p></div>
+            </details>
+            <details>
+              <summary>BAB IV — Pembahasan &amp; Hasil</summary>
+              <div class="acc__body"><p><span class="todo">Hasil kerja, kendala yang dihadapi, dan cara mengatasinya.</span></p></div>
+            </details>
+            <details>
+              <summary>BAB V — Penutup</summary>
+              <div class="acc__body"><p><span class="todo">Kesimpulan dan saran untuk sekolah &amp; instansi.</span></p></div>
+            </details>
+            <div class="actions">
+              <a class="btn btn--primary btn--sm" href="laporan/laporan-magang.pdf" download><i class="bi bi-download"></i> Unduh Laporan (PDF)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REFLEKSI ============ -->
+    <section id="refleksi" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">07 // Refleksi</span>
+          <h2 class="section__title">Tantangan &amp; pelajaran</h2>
+        </div>
+        <div class="deliverables">
+          <div class="panel glass reveal">
+            <h3><i class="bi bi-exclamation-triangle" style="color:var(--warn)"></i> Tantangan terbesar</h3>
+            <p><span class="todo">Apa yang paling sulit, dan bagaimana kamu mengatasinya.</span></p>
+          </div>
+          <div class="panel glass reveal">
+            <h3><i class="bi bi-lightbulb" style="color:var(--accent)"></i> Pelajaran terpenting</h3>
+            <p>Konten itu dibaca orang lain, bukan oleh pembuatnya. Satu poster yang menurut saya keren belum tentu jelas bagi orang yang cuma melihatnya dua detik sambil scroll — cara berpikir ini sekarang saya pakai juga waktu menyusun halaman web.</p>
+          </div>
+          <div class="panel glass reveal">
+            <h3><i class="bi bi-rocket-takeoff" style="color:var(--secondary)"></i> Langkah selanjutnya</h3>
+            <p>Fokus penuh ke web development: memperdalam JavaScript, terbiasa dengan satu framework front-end, dan membangun website utuh dari nol sampai online.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PENILAIAN PEMBIMBING ============ -->
+    <section id="penilaian" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">08 // Penilaian</span>
+          <h2 class="section__title">Kata pembimbing</h2>
+        </div>
+        <div class="quote glass reveal">
+          <blockquote>“<span class="todo">Kutipan singkat dari pembimbing industri (minta izin dulu sebelum dipublikasikan).</span>”</blockquote>
+          <cite>— <span class="todo">Nama, jabatan, instansi</span></cite>
+          <div class="actions">
+            <a class="btn btn--sm" href="laporan/sertifikat-magang.pdf" target="_blank" rel="noopener"><i class="bi bi-patch-check"></i> Lihat Sertifikat Magang</a>
+            <a class="btn btn--primary btn--sm" href="index.html#contact"><i class="bi bi-chat-dots"></i> Hubungi Saya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year">2026</span> Achmad Adam Sajjad Arifin.</p>
+      <a class="footer__top" href="#main"><i class="bi bi-arrow-up"></i> Kembali ke atas</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

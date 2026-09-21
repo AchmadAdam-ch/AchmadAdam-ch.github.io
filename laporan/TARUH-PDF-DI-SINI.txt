@@ -1,0 +1,7 @@
+Taruh file PDF di folder ini dengan nama persis:
+
+  laporan-magang.pdf        -> laporan lengkap (dipakai tombol "Unduh PDF" + pratinjau di magang.html)
+  sertifikat-magang.pdf     -> sertifikat/surat keterangan magang (opsional)
+
+Tips: kompres PDF di bawah ±10 MB supaya pratinjau cepat dimuat.
+Hapus file .txt ini kalau sudah tidak diperlukan.

@@ -1,0 +1,2 @@
+happy-game.webp = logo "Happy Game" dari portofolio lama. Tidak dipakai di versi baru
+(supaya tidak salah menyebut brand). Kalau itu brand/studio milikmu, bilang saja — bisa dipasang di bagian Tentang.
